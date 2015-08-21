@@ -1,0 +1,20 @@
+{
+  "name": "Xemplry-polymer",
+  "version": "0.0.0",
+  "authors": [
+    "jyothsna <jyothsnasrinivas17@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.4",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0"
+  }
+}

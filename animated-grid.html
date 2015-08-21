@@ -1,0 +1,138 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-styles/paper-styles.html">
+<link rel="import" href="bower_components/neon-animation/neon-shared-element-animatable-behavior.html">
+
+<dom-module id="animated-grid">
+
+  <link rel="import" type="css" href="shared.css">
+
+  <style>
+    :host {
+      display: block;
+      background: #000;
+      --google-red-300: #A42840;
+      --google-blue-300: #252531;
+    }
+    .tile {
+      display: inline-block;
+      float: left;
+      vertical-align: top;
+      width: calc(100% / 2);
+      height: calc(100% / 2);
+      @apply(--paper-font-title);
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+    }
+    .tile:nth-of-type(1) {
+      width: calc(100% / 2);
+      height: calc(100% / 2);
+    }
+    .tile:hover {
+      background-color: #bbb;
+    }
+    .tile span{
+      font-family: 'Handlee', serif;
+      color:#ffffff;
+      font-size: 60px;
+    }
+    #menu{
+      position: fixed;
+      top: 50%;
+      background-color:#A42840;
+      left: 50%;
+      margin-left: -60px;
+      margin-top: -60px;
+      padding: 0px;
+      width: 120px; 
+      height: 120px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+       border-radius: 50%;
+       border: 2px solid #ffffff; 
+
+    }
+    #menu img{
+      position: relative;
+      top:22px;
+      left: 30px;
+    }
+  </style>
+
+  <template>
+      <div id="menu">
+
+          <img class="logo" src="Xemplry_rounded_logo1.png" />
+      </div>
+      <template is="dom-repeat" items="[[config]]">
+
+      <div class$="[[_computeTileClass(item.color)]]">
+        <span>[[item.value]]</span>
+      </div>
+    </template>
+
+  </template>
+
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'animated-grid',
+    behaviors: [
+      Polymer.NeonSharedElementAnimatableBehavior
+    ],
+    properties: {
+      config: {
+        type: Array,
+        value: function() {
+          return [
+            {id: 0, value: "We're Xemplry", color: 'blue'},
+            {id: 1, value: "We do digital", color: 'red'},
+            {id: 2, value: "See our work", color: 'red'},
+            {id: 3, value: "Let's talk" , color: 'blue'}
+          ]
+        }
+      },
+      animationConfig: {
+        type: Object,
+        value: function() {
+          return {
+            'exit': [{
+              name: 'ripple-animation',
+              id: 'ripple',
+              fromPage: this
+            }, {
+              name: 'hero-animation',
+              id: 'hero',
+              fromPage: this
+            }]
+          }
+        }
+      }
+    },
+    listeners: {
+      click: '_onClick'
+    },
+    _computeTileClass: function(color) {
+      return 'tile ' + color + '-300';
+    },
+    _onClick: function(event) {
+      var target = event.target;
+      while (target !== this && !target._templateInstance) {
+        target = target.parentNode;
+      }
+      // configure the page animation
+      this.sharedElements = {
+        'hero': target,
+        'ripple': target
+      };
+      this.animationConfig['exit'][0].gesture = {
+        x: event.x || event.pageX,
+        y: event.y || event.pageY
+      };
+      this.fire('tile-click', {
+        tile: target,
+        data: target._templateInstance.item
+      });
+    }
+  });
+</script>
