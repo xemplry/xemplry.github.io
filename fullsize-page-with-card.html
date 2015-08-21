@@ -47,7 +47,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       color: #ffffff
     }
 
-    .card #menu ul li h2{
+    .card .row ul li h2{
       font-size: 50px;
       font-family: 'Handlee', serif;
       text-align: left;
@@ -56,7 +56,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     }
 
-    .card #menu ul li p{
+    .card .row ul li h3{
+      font-size: 30px;
+      font-family: 'Handlee', serif;
+      text-align: left;
+      color: #ffffff;
+      margin-left: 20px;
+
+    }
+
+
+    .card .row ul li p{
       font-size: 20px;
       font-family: 'Handlee', serif;
       text-align: left;
@@ -64,18 +74,70 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin-left: 20px;
     }
 
-    .card #menu ul{
+    .card .row ul{
     list-style: none;
     }
 
-    .card #menu li{
+    .card .row li{
       display: inline;
-      width: 210px;
+      width: 400px;
       float: left;
       padding-left: 80px;
-      padding-right: 80px;
       padding-top: 0px;
     }
+
+    .card .padpeeps {
+      padding-top: 100px;
+    }
+    .circular_jo {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(images/jo.jpg) no-repeat;
+    align: center;
+    }
+    a:link {
+    color: #FFFFFF;
+    font-size: 20px
+    }
+
+    /* visited link */
+    a:visited {
+        color: #00FF00;
+        font-size: 20px
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #FF00FF;
+        font-size: 20px
+    }
+
+    /* selected link */
+    a:active {
+        color: #0000FF;
+        font-size: 20px
+    }
+    .circular_rahul {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(images/rahul1.jpg) no-repeat ;
+    }
+    .material-icons{ padding-left: 3  0px;}
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    .material-icons.md-48 { font-size: 48px; }
+    .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+    .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
   </style>
 
   <template>
@@ -87,15 +149,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div id="card" class$="[[_computeCardClass(color)]]">
       <div id="unique0" class="unique">
           <h1>We're Xemplry</h1>
-          <div id="menu">
+          <div class="row" id="menu">
             <ul>
             <li><h2>We do</h2>
-            <p>We're a proudly small web agency based in Bengaluru, India.</p>
-            <p>We work with clients big and small to bring their businesses into the digital age.</p>
+            <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
+            <p>We started Xemplry - to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
             </li>
-            <li><h2>We care</h2></li>
-            <li><h2>We love</h2></li>
+            <li><h2>We care</h2>
+            <p>We listen to you and understand you because we’re not just techies - we’re entrepreneurs as well.</p>
+            <p>And remember, it’s not just your product - it’s our product as well and we take great pride in building the best products.</p>
+            </li>
             </ul>
+          </div>
+          <h1 class="padpeeps">People</h1>
+          <div class="row" id="people_menu">
+          <ul>
+          <li><div class="circular_jo"></div>
+          <h3>Jyothsna Srinivas</h3>
+          <i class="material-icons md-36 md-light">call</i><a class="links" href="tel:+91-8011036728">+91-8011036728</a><br>
+          <i class="material-icons md-36 md-light">email</i><a href="jyothsna@xemplry.com">jyothsna@xemplry.com</a>
+          </li>
+          <li><div class="circular_rahul"></div>
+          <h3>Rahul Muttineni</h3>
+          </li>
+            
           </div>
       </div>
       <div id="unique1" class="unique">
