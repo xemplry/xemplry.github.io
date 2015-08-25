@@ -21,113 +21,133 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       --google-blue-300: #252531;
       --google-red-100: #ffffff;
       --google-blue-100: #ffffff;
-
     }
+
     .fixed {
       position: fixed;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
-      
     }
+
     .card {
       position: relative;
       margin: 100px 100px;
-      overflow: auto;
-
-        
-    }
-
-    .card h1{ 
-      position: relative;
-      font-size: 80px;
-      font-family: 'Handlee', serif;
-      text-align: center;
-      color: #ffffff
-    }
-
-    .card .row ul li h2{
-      font-size: 50px;
       font-family: 'Handlee', serif;
       text-align: left;
       color: #ffffff;
-      margin-left: 20px;
-
     }
 
-    .card .row ul li h3{
-      font-size: 30px;
-      font-family: 'Handlee', serif;
-      text-align: left;
-      color: #ffffff;
-      margin-left: 20px;
-
-    }
-
-
-    .card .row ul li p{
-      font-size: 20px;
-      font-family: 'Handlee', serif;
-      text-align: left;
-      color: #ffffff;
-      margin-left: 20px;
-    }
-
-    .card .row ul{
-    list-style: none;
-    }
-
-    .card .row li{
-      display: inline;
-      width: 400px;
-      float: left;
-      padding-left: 80px;
-      padding-top: 0px;
-    }
-
-    .card .padpeeps {
-      padding-top: 100px;
-    }
     .circular_jo {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(images/jo.jpg) no-repeat;
-    align: center;
+     margin: auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 150px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      background: url(images/jo.jpg) no-repeat;
+      align: center;
     }
     a:link {
-    color: #FFFFFF;
-    font-size: 20px
+      color: #FFFFFF;
+      font-size: 20px
     }
 
     /* visited link */
     a:visited {
-        color: #00FF00;
-        font-size: 20px
+      color: #00FF00;
+      font-size: 20px
     }
 
     /* mouse over link */
     a:hover {
-        color: #FF00FF;
-        font-size: 20px
+      color: #FF00FF;
+      font-size: 20px
     }
 
     /* selected link */
     a:active {
-        color: #0000FF;
-        font-size: 20px
+      color: #0000FF;
+      font-size: 20px
     }
+
     .circular_rahul {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(images/rahul1.jpg) no-repeat ;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 150px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      background: url(images/rahul1.jpg) no-repeat ;
     }
+
+    .left-column {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 50%;
+      margin:auto;
+      vertical-align: text-top;
+    }
+
+    .right-column {
+      box-sizing: border-box;
+      float: right;
+      display: inline-block;
+      width: 50%;
+      vertical-align: text-top;
+    }
+
+    .card-interior {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .card-title {
+      padding-top: 100px;
+      font-size: 80px;
+      text-align: center;
+    }
+
+    .card-padding {
+      margin: 50px;
+      padding: 0px;
+      overflow: auto;
+    }
+
+    .info-group {
+      margin: auto;
+    }
+
+    .info-group a {
+      vertical-align: middle;
+    }
+
+    .info-group i {
+      vertical-align: middle;
+      padding-left: 40px;
+    }
+
+    .desc-padding {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    
+    h3 {
+      margin: auto;
+      text-align: center;
+    }
+
+    .info {
+      margin: auto;
+      width: 50%;
+      
+    }
+
+    .row {
+      overflow: auto;
+    }
+
     .material-icons{ padding-left: 3  0px;}
     .material-icons.md-18 { font-size: 18px; }
     .material-icons.md-24 { font-size: 24px; }
@@ -148,32 +168,57 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div id="card" class$="[[_computeCardClass(color)]]">
       <div id="unique0" class="unique">
-          <h1>We're Xemplry</h1>
-          <div class="row" id="menu">
-            <ul>
-            <li><h2>We do</h2>
-            <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
-            <p>We started Xemplry - to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
-            </li>
-            <li><h2>We care</h2>
-            <p>We listen to you and understand you because we’re not just techies - we’re entrepreneurs as well.</p>
-            <p>And remember, it’s not just your product - it’s our product as well and we take great pride in building the best products.</p>
-            </li>
-            </ul>
-          </div>
-          <h1 class="padpeeps">People</h1>
-          <div class="row" id="people_menu">
-          <ul>
-          <li><div class="circular_jo"></div>
-          <h3>Jyothsna Srinivas</h3>
-          <i class="material-icons md-36 md-light">call</i><a class="links" href="tel:+91-8011036728">+91-8011036728</a><br>
-          <i class="material-icons md-36 md-light">email</i><a href="jyothsna@xemplry.com">jyothsna@xemplry.com</a>
-          </li>
-          <li><div class="circular_rahul"></div>
-          <h3>Rahul Muttineni</h3>
-          </li>
+        <div class="card-interior">
+          <div class="card-padding">
+            <h1 class="card-title">We're Xemplry</h1>
+            <div class="left-column desc-padding">
+              <h2>We do</h2>
+              <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
+              <p>We started Xemplry - to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
+            </div>
+            <div class="right-column desc-padding">
+              <h2>We care</h2>
+              <p>We listen to you and understand you because we’re not just techies - we’re entrepreneurs as well.</p>
+              <p>And remember, it’s not just your product - it’s our product as well and we take great pride in building the best products.</p>
+            </div>
+            <h1 class="card-title">People</h1>
+            <div class="left-column">
+              <div class="circular_jo"></div>
+              <div class="info">
+                <h3>Jyothsna Srinivas</h3>
+                <div class="info-group">
+                  <i class="material-icons md-36 md-light">call</i>  
+                  <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
+                </div>
+                <div class="info-group">
+                  <i class="material-icons md-36 md-light">email</i>
+                  <a href="jyothsna@xemplry.com">jyothsna@xemplry.com</a>
+                </div>
+                <p>
+                  Rahul is a self-taught programmer, entrepreneur, teacher. Having built an online multiplayer game at the age of 13, he now loves architecting systems that are scalable, robust, adn  crafting elegant programming solutions to complex, real world problems.
+                </p>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="circular_rahul"></div>
+              <div class="info">  
+                <h3>Rahul Muttineni</h3>
+                <div class="info-group">
+                  <i class="material-icons md-36 md-light">call</i>  
+                  <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
+                </div>
+                <div class="info-group">
+                  <i class="material-icons md-36 md-light">email</i>
+                  <a href="rahul@xemplry.com">rahul@xemplry.com</a>
+                </div>
+                <p>
+                  Rahul is a self-taught programmer, entrepreneur, teacher. Having built an online multiplayer game at the age of 13, he now loves architecting systems that are scalable, robust, adn  crafting elegant programming solutions to complex, real world problems.
+                </p>
+              </div>
+            </div>
             
           </div>
+        </div>
       </div>
       <div id="unique1" class="unique">
         <h1>We do digital</h1>
@@ -203,6 +248,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       var unique = Polymer.dom(this.$.card).querySelector('#unique' + newVal);
       unique.style.display = 'inline';
     },
+
     properties: {
       color: {
         type: String
