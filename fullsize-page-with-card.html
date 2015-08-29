@@ -9,6 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="bower_components/polymer/polymer.html">
 <link rel="import" href="bower_components/neon-animation/neon-shared-element-animatable-behavior.html">
 <link rel="import" href="bower_components/paper-card/paper-card.html">
+<link rel="import"  href="bower_components/paper-input/paper-input.html">
 
 <dom-module id="fullsize-page-with-card">
 
@@ -105,6 +106,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .card-title {
       padding-top: 100px;
+      padding-bottom: 100px;
       font-size: 80px;
       text-align: center;
     }
@@ -121,7 +123,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .info-group a {
       vertical-align: middle;
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .info-group i {
@@ -129,6 +131,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding-left: 40px;
     }
 
+    .row img{
+      margin-right: auto;
+      margin-left: auto;
+    }
     p{
       font-family: 'Delius', cursive;
       font-size: 20px;
@@ -152,8 +158,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .row {
       overflow: auto;
+      padding-bottom: 50px;
+      padding-top: 50px;
     }
-    a {font-size: 15px}
+    
 
     .headerDivider {
      border-left:1px solid #ffffff; 
@@ -242,35 +250,67 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="card-content">
             <div class="container">
               <h1 class="card-title">How we work</h1>
-              <div class="headerDivider"></div>
               <div class="row">
                 <div class="six columns">
-                  <h1>1</h1>
                   <p>We sit and discuss with you to get a deep understanding of your problem.</p>
                 </div>
                 <div class="six columns">
-                  <h1>2</h1>
+                  <img src="images/discuss.png">
+                </div>
+                </div>
+                <div class="row"> 
+                <div class="six columns">
+                  <img src="images/user_interface.png">
+                </div>
+                <div class="six columns">             
                   <p>We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.</p>
                 </div>
-              </div>
+                </div>
               <div class="row">
-                <div class="twelve columns">
-                  <h1>3</h1>
+                <div class="six columns">
                   <p>We design the software architecture to meet one or more of the following requirements dependent on your domain:</p>
                 </div>
+                <div class="six columns">
+                  <img src="images/software_architecture.png">
+                </div>
               </div>
               <div class="row">
                 <div class="four columns">
-                  <h1>Scalability</h1>
-                  <p>smoothly accommodate the growth of your business.</p>
+                  <img src="images/scalability.png">
                 </div>
                 <div class="four columns">
-                  <h1>Performance</h1>
+                  <img src="images/performance.png">
+                </div>
+                <div class="four columns">
+                  <img src="images/malleability.png">
+                </div>
+              </div>
+              <div class="row">
+                <div class="four columns">
+                  <h2>Scalability</h2>
+                  <p>Smoothly accommodate the growth of your business.</p>
+                </div>
+                <div class="four columns">
+                  <h2>Performance</h2>
                   <p>Don’t make the user wait.</p>
                 </div>
                 <div class="four columns">
-                  <h1>Malleability</h1>
+                  <h2>Malleability</h2>
                   <p>Deploy new features quickly and efficiently.</p>
+                </div>
+              </div>
+               <div class="row">
+                <div class="three columns">
+                  dsdds
+                </div>
+                <div class="three columns">
+                  <img src="images/robustness.png">
+                </div>
+                <div class="three columns">
+                  <img src="images/security.png">
+                </div>
+                <div class="three columns">
+                  sdfsd
                 </div>
               </div>
               <div class="row">
@@ -278,11 +318,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   dsdds
                 </div>
                 <div class="three columns">
-                  <h1>Robustness</h1>
+                  <h2>Robustness</h2>
                   <p>Make sure your app can handle any unexpected situation silently, leaving your user unaware that any problem occurred.</p>
                 </div>
                 <div class="three columns">
-                  <h1>Security</h1>
+                  <h2>Security</h2>
                   <p>Build trust with your users.</p>
                 </div>
                 <div class="three columns">
@@ -291,147 +331,73 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
               <div class="row">
                 <div class="six columns">
-                  <h1>4</h1>
+                  <img src="images/question.png">
+                </div>
+                <div class="six columns">
                   <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
-    We select the technology stack that will best implement the solution given your unique requirements.
-     Suppose. </p>
+                  We select the technology stack that will best implement the solution given your unique requirements.
+                  Suppose. </p>
                 </div>
               </div>
               <div class="row">
                 <div class="six columns">
-                  <h1>4</h1>
-                  <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
-    We select the technology stack that will best implement the solution given your unique requirements.
-     Suppose. </p>
-              </div>
-              </div>
-              <div class="row">
-                <div class="six columns">
-                  <h1>5</h1>
                   <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
                 </div>
                 <div class="six columns">
-                  <h1>6</h1>
+                  <img src="images/future.png">
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <img src="images/safe_data.png">
+                </div>
+                <div class="six columns">
                   <p>We know that your customers are paranoid about whether their data is safe with you.</p>
                 </div>
               </div>
               <div class="row">
                 <div class="six columns">
-                  <h1>7</h1>
                   <p>We know that your competitors are employing their best efforts to beat you out.</p>
                 </div>
                 <div class="six columns">
-                  <h1>8</h1>
+                  <img src="images/competitors.png">
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <img src="images/establish.png">
+                </div>
+                <div class="six columns">
                   <p>We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.</p>
                 </div>
               </div>
             </div>
           </div>
-<!--        <div class="container">
-          <h1 class="card-title">How we work</h1>
-          <div class="row">
-            <div class="six columns">
-              <h1>1</h1>
-              <p>We sit and discuss with you to get a deep understanding of your problem.</p>
-            </div>
-            <div class="six columns">
-              <h1>2</h1>
-              <p>We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns">
-              <h1>3</h1>
-              <p>We design the software architecture to meet one or more of the following requirements dependent on your domain:</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="four columns">
-              <h1>Scalability</h1>
-              <p>smoothly accommodate the growth of your business.</p>
-            </div>
-            <div class="four columns">
-              <h1>Performance</h1>
-              <p>Don’t make the user wait.</p>
-            </div>
-            <div class="four columns">
-              <h1>Malleability</h1>
-              <p>Deploy new features quickly and efficiently.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="three columns">
-              dsdds
-            </div>
-            <div class="three columns">
-              <h1>Robustness</h1>
-              <p>Make sure your app can handle any unexpected situation silently, leaving your user unaware that any problem occurred.</p>
-            </div>
-            <div class="three columns">
-              <h1>Security</h1>
-              <p>Build trust with your users.</p>
-            </div>
-            <div class="three columns">
-              sdfsd
-            </div>
-          </div>
-          <div class="row">
-            <div class="six columns">
-              <h1>4</h1>
-              <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
-We select the technology stack that will best implement the solution given your unique requirements.
- Suppose. </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="six columns">
-              <h1>4</h1>
-              <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
-We select the technology stack that will best implement the solution given your unique requirements.
- Suppose. </p>
-          </div>
-          </div>
-          <div class="row">
-            <div class="six columns">
-              <h1>5</h1>
-              <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
-            </div>
-            <div class="six columns">
-              <h1>6</h1>
-              <p>We know that your customers are paranoid about whether their data is safe with you.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="six columns">
-              <h1>7</h1>
-              <p>We know that your competitors are employing their best efforts to beat you out.</p>
-            </div>
-            <div class="six columns">
-              <h1>8</h1>
-              <p>We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.</p>
-            </div>
-          </div>
-        </div>-->
       </div>
-<!-- Don't worry we've got your back. 
- 
-, who building features faster than you can. Don't worry! We keep ourselves up-to-date and obsessively find ways to write code faster and more accurately. We have explored far and wide to weed out from the exploding number of frameworks and APIs. We discover
 
-
-So how are we able to accomplish all this? We have a secret weapon. But because you've made it this far we'll share it with you. On our quest to find the technology that can tackle complex problems with ease and elegance, we found Haskell. Haskell is the epitome of the functional programming paradigm, the paradigm that will rule the world in the coming yedears. 
-
-Still there? Send us an email.
-Who are we?
-We are two
-
-Ready to 
-We know that you're not afraid to take risk </p>
--->
       <div id="unique2" class="unique">
-          <h1>See our work</h1>
+          <div class="card-interior">
+          <div class="card-padding">
+            <h1 class="card-title">See our work</h1>
+            </div>
+            </div>
       </div>
       <div id="unique3" class="unique">
-          <h1>Let's </h1>
+          <div class="card-interior">
+          <div class="card-padding">
+            <h1 class="card-title">Lets' Talk</h1>
+              <paper-card heading="Name">
+                <div class="card-content">Some content</div>
+                  <paper-input label="Input label"></paper-input>
+                  <paper-input label="Input label"></paper-input>
+                  <paper-input label="Input label"></paper-input>
+                  </div>
+              </paper-card>
+
+            
+
+            </div>
+            </div>
       </div>
     </div>
   </template>
