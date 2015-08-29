@@ -1,0 +1,33 @@
+‎We listen to you and understand you because we’re not just techies - we’re entrepreneurs as well. We know that getting users is difficult. We know that you don’t care whether we use C or Haskell, as long as your product gets done in a timely manner and the users come running to use your product. That’s why we started Xemplry - to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.
+And remember, it’s not just your product - it’s our product as well and we take great pride in
+So how do we work?
+We sit and discuss with you to get a deep understanding of your problem.
+We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.
+We design the software architecture to meet one or more of the following requirements dependent on your domain:
+Scalability smoothly accommodate the growth of your business
+Performance don’t make the user wait
+Malleability  deploy new features quickly and efficiently
+Robustness Make sure your app can handle any unexpected situation silently, leaving your user unaware that any problem occurred
+Security build trust with your users
+ 
+What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
+We select the technology stack that will best implement the solution given your unique requirements.
+ Suppose. 
+We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users. Don't worry we've got your back. 
+We know that your customers are paranoid about whether their data is safe with you. 
+We know that your competitors are employing their best efforts to beat you out.
+We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.
+
+, who building features faster than you can. Don't worry! We keep ourselves up-to-date and obsessively find ways to write code faster and more accurately. We have explored far and wide to weed out from the exploding number of frameworks and APIs. We discover
+Who are we? We're Xemplary. We give excellence in a package. When you work with us, you demonstrate to us that you choose excellence over mediocrity. You show us that you are willing to move forward and exploit the hidden opportunities around you to produce explosive growth for your business. You show us that you will do whatever it takes to beat your competitors. 
+So how are we able to accomplish all this? We have a secret weapon. But because you've made it this far we'll share it with you. On our quest to find the technology that can tackle complex problems with ease and elegance, we found Haskell. Haskell is the epitome of the functional programming paradigm, the paradigm that will rule the world in the coming yedears. 
+
+Still there? Send us an email. 
+Who are we?
+We are two
+
+
+
+
+Ready to 
+We know that you're not afraid to take risk 
