@@ -9,6 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="bower_components/polymer/polymer.html">
 <link rel="import" href="bower_components/neon-animation/neon-shared-element-animatable-behavior.html">
 <link rel="import" href="bower_components/paper-card/paper-card.html">
+<link rel="import" href="bower_components/paper-fab/paper-fab.html">
 <link rel="import"  href="bower_components/paper-input/paper-input.html">
 
 <dom-module id="fullsize-page-with-card">
@@ -23,6 +24,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       --google-blue-300: #252531;
       --google-red-100: #ffffff;
       --google-blue-100: #ffffff;
+      --paper-fab: {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 2;
+      };
+      --paper-fab-background: var(--google-red-300);
     }
 
     .fixed {
@@ -35,7 +43,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .card {
       position: relative;
-      margin: 5%;
+      margin: 10%;
       font-family: 'Delius', cursive;
       text-align: left;
       color: #ffffff;
@@ -51,6 +59,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       background: url(images/jo.jpg) no-repeat;
       align: center;
     }
+
+    i {
+      vertical-align: middle;
+    }
+
     a:link {
       color: #FFFFFF;
     }
@@ -128,7 +141,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #unique1 .container {
       padding-bottom: 5%;
     } 
-
+    #unique0 .container {
+      padding-bottom: 5%;
+    } 
 
     .row {
       overflow: auto;
@@ -144,11 +159,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding-bottom: 15px;
     }
 
+    .borders{
+      border-style: solid;
+      border-width: 2px;
+      border-color: #FFFFFF;
+    }
+
     .row p {
       text-align: center;
-      vertical-align: middle;
-      margin-top: auto;
-      margin-bottom: auto;
+      vertical-align: bottom;
     }
 
     p {
@@ -162,8 +181,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .info {
-      margin: auto;
-      width: 50%;
+      display: block;
     }
 
     .material-icons{ padding-left: 3  0px;}
@@ -176,32 +194,75 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .material-icons.md-light { color: rgba(255, 255, 255, 1); }
     .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
   </style>
 
   <template>
 
+    
     <div id="fixed" class$="[[_computeFixedBackgroundClass(color)]]">
       
     </div>
-
+    <paper-fab icon="reply" on-click="_onClick"></paper-fab>
     <div id="card" class$="[[_computeCardClass(color)]]">
       <div id="unique0" class="unique">
-        <div class="card-interior">
-          <div class="card-padding">
-            <h1 class="card-title">We're Xemplry</h1>
-            <div class="left-column desc-padding">
-              <h5>We do</h5>
-              <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
-              <p>We started Xemplry to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
-              <p>Who are we? We're Xemplary. We give excellence in a package. When you work with us, you demonstrate to us that you choose excellence over mediocrity. You show us that you are willing to move forward and exploit the hidden opportunities around you to produce explosive growth for your business. You show us that you will do whatever it takes to beat your competitors.</p>
+        <div class="container">
+          <h1 class="card-title">We're Xemplry</h1>
+          <div class="row red-300 borders">
+            <div class="six columns">
+              <h3>We do</h3>
+                <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
+                <p>We started Xemplry to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
+                <br>
+                <p>Who are we? We're Xemplary. We give excellence in a package. When you work with us, you demonstrate to us that you choose excellence over mediocrity. You show us that you are willing to move forward and exploit the hidden opportunities around you to produce explosive growth for your business. You show us that you will do whatever it takes to beat your competitors.</p>
             </div>
-            <div class="right-column desc-padding">
-              <h5>We care</h5>
+            
+            <div class="six columns">
+              <h3>We care</h3>
               <p>We listen to you and understand you because we’re entrepreneurs as well as techies. We deeply understand the needs of the market.</p>
+              <br>
               <p>And remember, your product is our product and we take pride in building the most lucrative products.</p>
             </div>
-            <h1 class="card-title">People</h1>
-            <div class="left-column">
+          </div>
+          <h1 class="card-title">People</h1>
+          <div class="row red-300 borders">
+            <div class="six columns">
+              <div class="circular_jo"></div>
+              <h3>Jyothsna Srinivas</h3>
+              <div class="info">
+                <i class="material-icons md-36 md-light">call</i>  
+                <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
+              </div>
+              <div class="info">
+                <i class="material-icons md-36 md-light">email</i>
+                <a href="jyothsna@xemplry.com">jyothsna@xemplry.com</a>
+              </div>
+              <p>
+                  Jyothsna is a writer, designer, and front-end developer. She retrieves valuable information from the depths of Google and parse it at a lightning-fast pace, finding valuable insights about any topic very quickly.
+              </p>
+            </div>
+
+            <div class="six columns">
+              <div class="circular_rahul"></div>  
+                <h3>Rahul Muttineni</h3>
+                <div class="info">
+                  <i class="material-icons md-36 md-light">call</i>  
+                  <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
+                </div>
+                <div class="info">
+                  <i class="material-icons md-36 md-light">email</i>
+                  <a href="rahul@xemplry.com">rahul@xemplry.com</a>
+                </div>
+                <p>
+                  Rahul is a self-taught programmer, entrepreneur, and teacher. Having built an online multiplayer game at the age of 13 which had 600+ players, he now loves architecting systems that are scalable, robust, and secure. He can learn anything software-related at a lightning-fast pace and rapidly output a product.
+                </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+            
+           <!-- <div class="left-column">
               <div class="circular_jo"></div>
               <div class="info">
                 <h3>Saint</h3>
@@ -216,8 +277,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p>
                   Saint is a writer, designer, and front-end developer. She retrieves valuable information from the depths of Google and parse it at a lightning-fast pace, finding valuable insights about any topic very quickly.
                 </p>
-              </div>
-            </div>
+              </div> 
+            </div> 
             <div class="right-column">
               <div class="circular_rahul"></div>
               <div class="info">  
@@ -234,15 +295,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   Vlad is a self-taught programmer, entrepreneur, and teacher. Having built an online multiplayer game at the age of 13 which had 600+ players, he now loves architecting systems that are scalable, robust, and secure. He can learn anything software-related at a lightning-fast pace and rapidly output a product.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div> -->
       <div id="unique1" class="unique">
           <div class="container">
             <h1 class="card-title">How we work</h1>
-            <div class="row blue-300">
-              <div class="six columns">
+            <div class="row blue-300 borders">
+              <div class="six columns" style="height: 100%">
                 <p><span>We sit and discuss with you to get a deep understanding of your problem.</span></p>
               </div>
               <div class="six columns">
@@ -444,6 +502,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         cls += ' ' + color + '-100';
       }
       return cls;
+    },
+    _onClick: function() {
+      this.fire('back');
     }
   });
 </script>
