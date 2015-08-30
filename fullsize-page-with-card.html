@@ -199,11 +199,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <template>
 
-    
-    <div id="fixed" class$="[[_computeFixedBackgroundClass(color)]]">
-      
-    </div>
-    <paper-fab icon="reply" on-click="_onClick"></paper-fab>
+    <div id="fixed" class$="[[_computeFixedBackgroundClass(color)]]"></div>
+    <paper-fab icon="reply" on-click="_onClick" id="back"></paper-fab>
     <div id="card" class$="[[_computeCardClass(color)]]">
       <div id="unique0" class="unique">
         <div class="container">
@@ -406,21 +403,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </div>
       </div>
       <div id="unique3" class="unique">
-          <div class="card-interior">
-          <div class="card-padding">
-            <h1 class="card-title">Lets' Talk</h1>
-              <paper-card heading="Name">
-                <div class="card-content">Some content</div>
+          <h1 class="card-title">Lets' Talk</h1>
+          <paper-card heading="Name">
+              <div class="card-content">
+                  <p>Some content</p>
                   <paper-input label="Input label"></paper-input>
                   <paper-input label="Input label"></paper-input>
                   <paper-input label="Input label"></paper-input>
-                  </div>
-              </paper-card>
-
-            
-
-            </div>
-            </div>
+              </div>
+          </paper-card>
       </div>
     </div>
   </template>
@@ -479,6 +470,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             'exit': [{
               name: 'fade-out-animation',
               node: this.$.fixed
+            }, {
+                name: 'fade-out-animation',
+                node: this.$.back
             }, {
               name: 'transform-animation',
               transformFrom: 'none',
