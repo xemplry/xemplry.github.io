@@ -11,6 +11,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="bower_components/paper-card/paper-card.html">
 <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 <link rel="import"  href="bower_components/paper-input/paper-input.html">
+<link rel="import"  href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import"  href="bower_components/paper-button/paper-button.html">
+<link href="bower_coomponents/iron-icons/iron-icons.html" rel="import">
 
 <dom-module id="fullsize-page-with-card">
 
@@ -24,11 +27,40 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       --google-blue-300: #252531;
       --google-red-100: #ffffff;
       --google-blue-100: #ffffff;
+      --paper-card-header-color:#ffffff;
       --paper-fab: {
         position: fixed;
         bottom: 15px;
         right: 15px;
         z-index: 2;
+      };
+      --paper-card:{
+        background-color:#252531; 
+      };
+      --paper-input-container-color:#ffffff;
+      --paper-input-container-focus-color:#3E50B4;
+      --paper-input-container-input-color:#ffffff;
+      --paper-card-content:{
+        text-align: center;
+      };
+      --paper-button:{
+        background-color: #A42840;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      };
+      --paper-input-container-label-focus:{
+        font-family: 'Delius', cursive;
+      };
+      --paper-input-container-input:{
+        font-family: 'Delius', cursive;
+      };
+      --paper-input-container-label:{
+        font-family: 'Delius', cursive;
+        text-align: left;
+      };
+      --paper-card-header:{
+        text-align: center;
       };
       --paper-fab-background: var(--google-red-300);
     }
@@ -150,7 +182,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #unique3 .container {
       padding-bottom: 5%;
     }
-
+    #unique3 {
+      --paper-card:{
+        background-color:#A42840; 
+      };
+    }
     .row {
       overflow: auto;
       text-align: center;
@@ -232,11 +268,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <template>
 
-    
-    <div id="fixed" class$="[[_computeFixedBackgroundClass(color)]]">
-      
-    </div>
-    <paper-fab icon="reply" on-click="_onClick"></paper-fab>
+    <div id="fixed" class$="[[_computeFixedBackgroundClass(color)]]"></div>
+    <paper-fab icon="reply" on-click="_onClick" id="back"></paper-fab>
     <div id="card" class$="[[_computeCardClass(color)]]">
       <div id="unique0" class="unique">
         <div class="container">
@@ -401,31 +434,90 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div id="unique2" class="unique">
         <div class="container">
           <h1 class="card-title">See our work</h1>
-          <paper-card heading="Card Title">
-            <div class="card-content">Some content</div>
-              <div class="card-actions">
-                  <paper-button>Some action</paper-button>
-              </div>
-          </paper-card>
+          <div class="row">
+            <div class="six columns">
+              <paper-card heading="ENROOT">
+                <div class="card-content">
+                  <img src="images/enroot_logo.png" style="width:50%;height:50%">
+                </div>
+                <div class="card-actions">
+                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" id="link_button" >link</i>   
+                </div>
+              </paper-card>
+            </div>
+            <div class="six columns">
+              <paper-card heading="DUDE AR">
+                <div class="card-content">
+                  <img src="images/dudear_logo1.png" style="width:50%;height:50%">
+                </div>
+                <div class="card-actions">
+                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" id="link_button" >link</i>   
+                </div>
+              </paper-card>
+            </div>
           </div>
+           <div class="row">
+            <div class="six columns">
+              <paper-card heading="TECHNICHE">
+                <div class="card-content">
+                  <img src="images/techniche_logo.png" style="width:50%;height:50%">
+                </div>
+                <div class="card-actions">
+                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" id="link_button" >link</i>   
+                </div>
+              </paper-card>
+            </div>
+            <div class="six columns">
+              <paper-card heading="TRANSPORTKSHETRA">
+                <div class="card-content">
+                  <img src="images/tk_logo.png" style="width:50%;height:50%">
+                </div>
+                <div class="card-actions">
+                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" id="link_button" >link</i>   
+                </div>
+              </paper-card>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="unique3" class="unique">
           <div class="container">
             <h1 class="card-title">Lets' Talk</h1>
-              <paper-card heading="Name">
-                <div class="card-content">Some content</div>
-                  <paper-input label="Input label"></paper-input>
-                  <paper-input label="Input label"></paper-input>
-                  <paper-input label="Input label"></paper-input>
-                  </div>
-              </paper-card>
-
-            
-
-            </div>
-            </div>
+              <div class="row red-300 borders">
+                <div class="six columns">
+                  <paper-input label="Name"></paper-input>
+                </div>
+                <div class="six columns">
+                  <paper-input label="Email"></paper-input>
+                </div>
+              </div>
+              <div style="height:10%">
+                <br>
+                <br>
+              </div>
+              <div class="row red-300 borders">
+                <div class="twelve columns"> 
+                  <paper-input label="Write your message here. Keep it simple and concise!">
+                  </paper-input>
+                </div>
+              </div>
+              <div style="height:10%">
+                <br>
+                <br>
+              </div>
+              <div class="twelve columns">
+                <paper-button>
+                Submit here
+                <iron-icon icon="send"></iron-icon>
+              </paper-button>
+              </div>
+              
+          </div>
       </div>
-    </div>
   </template>
 </dom-module>
 
@@ -482,6 +574,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             'exit': [{
               name: 'fade-out-animation',
               node: this.$.fixed
+            }, {
+                name: 'fade-out-animation',
+                node: this.$.back
             }, {
               name: 'transform-animation',
               transformFrom: 'none',

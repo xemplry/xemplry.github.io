@@ -24,10 +24,36 @@ So how are we able to accomplish all this? We have a secret weapon. But because 
 
 Still there? Send us an email. 
 Who are we?
-We are two
-
+We are t
+t
 
 
 
 Ready to 
-We know that you're not afraid to take risk 
+We know that you're not afraid to take risk
+
+
+
+
+Why should we pay high for you when we can get cheap labor Java/.NET/PHP developers to bash out our projects?
+The reason why Java/.NET/PHP developers are so volumnous is that there are numerous training centers around the world and even people with no computer science or programming background will learn it. But a majority of these people, even after much experience will no improve themselves. Regardless of the number of years of experience, they will only know how to get the project done with their specialization, but they WILL NOT BE THINKING OF YOUR BUSINESS. In fact, they will be thinking adding on many unnecessary features or increase the time of technical development in order to increase your bill and intentionally create flawed architectures for you to return. We are not like that. We are developers who have worked on huge projects and have worked with every aspect of the development cycle from frontend to backend, from software architecture design to testing, to deploying on the Cloud. In essence, we know the entire scope of the development process of a mobile app or website. Moreover, we are entrepreneurs. We understand business and we know exactly how to develop applications that can quickly evolve with the demands of the market. The point is not to get your website or app done in one shot. Not convinced? Give us a try, and we're sure you'll keep coming back to us for future improvements.
+
+In this modern, highly competitive market, fast deployment and delivery is necessary and we use the appropriate tools to satisfy your unique requirements as fast as possible. We are fearless polyglots. We speak many programming languages and can quickly adapt to new software technologies without hesitation. 
+
+We are also wary. When a new software technology comes out, we analyze the risk. Is this technology built to last? Is it built to scale? We do all the risk analysis for you.
+
+Your prices are rather high. Why should I pay you when I get it done cheaply?
+It's a general rule that you get what you pay for. If you hire cheap developers, you will obtain a product that requires future maintenance and will result in a loss of time and money. It will also be a nightmare to update the product to add new features if a mediocre developer implemented an ad-hoc architecture. If you hire Xemplry developers, you will obtain a rock-solid product that will be ready for customer consumption and easily extensible upon customer demand.
+
+You have a tendency to   
+
+the results you get will be cheap and you'll have to make up for the shortcomings with payments in the future. Moreover, the common mindset is that spending on technology is an expense. It's an expense if you don't have clients  If you pay less for technical services, you  offer high value services targeted towards helping your business or your company grow in the best possible way. 
+
+How can we trust a group of youngsters to handle large scale projects?
+Because we have people who understand the full scope of the development cycle and are experienced with architecting large applications. Our members are incredibly passionate about programming and technology and each has a remarkable achievement under their belt. For example, Rahul at the age of 13 built an online, multiplayer game called Megaman: Navi Wars on the BYOND Platform using the Dream Maker programming language which had 15,000 lines of code. Which had over 676 players overall and 340 players in a single day (Screenshots here). And the list goes on and on. While you can get  
+
+
+We are very selective of our members. We hand-pick high quality programmers who are self-directed, are in love with technology. We pick designers who are highly creative, make intuitive designs, and are user-centric.
+
+
+
