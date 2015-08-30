@@ -30,10 +30,9 @@
     .tile:hover {
       background-color: #bbb;
     }
-    .tile span{
+    .tile h1{
       font-family: 'Delius', cursive;
       color:#ffffff;
-      font-size: 60px;
     }
     #menu{
       position: fixed;
@@ -66,7 +65,7 @@
       <template is="dom-repeat" items="[[config]]">
 
       <div class$="[[_computeTileClass(item.color)]]">
-        <span>[[item.value]]</span>
+        <h1>[[item.value]]</h1>
       </div>
     </template>
 

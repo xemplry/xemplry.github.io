@@ -26,8 +26,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       --google-blue-100: #ffffff;
       --paper-fab: {
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        bottom: 15px;
+        right: 15px;
         z-index: 2;
       };
       --paper-fab-background: var(--google-red-300);
@@ -144,6 +144,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #unique0 .container {
       padding-bottom: 5%;
     } 
+    #unique2 .container {
+      padding-bottom: 5%;
+    }
+    #unique3 .container {
+      padding-bottom: 5%;
+    }
 
     .row {
       overflow: auto;
@@ -163,6 +169,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       border-style: solid;
       border-width: 2px;
       border-color: #FFFFFF;
+    }
+
+    .borders-left-right-top{
+      border-bottom-style: solid;  
+      border-top-style: solid;
+      border-right-style: solid;
+      border-left-style: solid;
+      border-width: 2px;
+      border-color: #FFFFFF; 
+    }
+
+    .borders-left-right{
+      border-bottom-style: hidden;  
+      border-top-style: hidden;
+      border-right-style: solid;
+      border-left-style: solid;
+      border-width: 2px;
+      border-color: #FFFFFF; 
+    }
+
+    .borders-left-right-bottom{
+      border-bottom-style: solid;  
+      border-top-style: hidden;
+      border-right-style: solid;
+      border-left-style: solid;
+      border-width: 2px;
+      border-color: #FFFFFF; 
     }
 
     .row p {
@@ -262,40 +295,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </div>
             
-           <!-- <div class="left-column">
-              <div class="circular_jo"></div>
-              <div class="info">
-                <h3>Saint</h3>
-                <div class="info-group">
-                  <i class="material-icons md-36 md-light">call</i>  
-                  <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
-                </div>
-                <div class="info-group">
-                  <i class="material-icons md-36 md-light">email</i>
-                  <a href="jyothsna@xemplry.com">jyothsna@xemplry.com</a>
-                </div>
-                <p>
-                  Saint is a writer, designer, and front-end developer. She retrieves valuable information from the depths of Google and parse it at a lightning-fast pace, finding valuable insights about any topic very quickly.
-                </p>
-              </div> 
-            </div> 
-            <div class="right-column">
-              <div class="circular_rahul"></div>
-              <div class="info">  
-                <h3>Vlad</h3>
-                <div class="info-group">
-                  <i class="material-icons md-36 md-light">call</i>  
-                  <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
-                </div>
-                <div class="info-group">
-                  <i class="material-icons md-36 md-light">email</i>
-                  <a href="rahul@xemplry.com">rahul@xemplry.com</a>
-                </div>
-                <p>
-                  Vlad is a self-taught programmer, entrepreneur, and teacher. Having built an online multiplayer game at the age of 13 which had 600+ players, he now loves architecting systems that are scalable, robust, and secure. He can learn anything software-related at a lightning-fast pace and rapidly output a product.
-                </p>
-              </div>
-            </div> -->
+      
       <div id="unique1" class="unique">
           <div class="container">
             <h1 class="card-title">How we work</h1>
@@ -315,7 +315,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p>We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.</p>
               </div>
               </div>
-            <div class="row blue-300">
+            <div class="row blue-300 borders-left-right-top">
               <div class="six columns">
                 <p>We design the software architecture to meet one or more of the following requirements dependent on your domain:</p>
               </div>
@@ -323,7 +323,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <img src="images/software_architecture.png">
               </div>
             </div>
-            <div class="row blue-300">
+            <div class="row blue-300 borders-left-right">
               <div class="four columns">
                 <img src="images/scalability.png">
                 <h5>Scalability</h5>
@@ -341,7 +341,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
             </div>
              
-            <div class="row blue-300">
+            <div class="row blue-300 borders-left-right-bottom">
               <div class="four columns">
                 <img src="images/robustness.png">
                 <h5>Robustness</h5>
@@ -363,7 +363,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 Suppose. </p>
               </div>
             </div>
-            <div class="row blue-300">
+            <div class="row blue-300 borders" >
               <div class="six columns">
                 <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
               </div>
@@ -379,7 +379,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p>We know that your customers are paranoid about whether their data is safe with you.</p>
               </div>
             </div>
-            <div class="row blue-300">
+            <div class="row blue-300 borders">
               <div class="six columns">
                 <p>We know that your competitors are employing their best efforts to beat you out.</p>
               </div>
@@ -399,15 +399,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
 
       <div id="unique2" class="unique">
-          <div class="card-interior">
-          <div class="card-padding">
-            <h1 class="card-title">See our work</h1>
-            </div>
-            </div>
+        <div class="container">
+          <h1 class="card-title">See our work</h1>
+          <paper-card heading="Card Title">
+            <div class="card-content">Some content</div>
+              <div class="card-actions">
+                  <paper-button>Some action</paper-button>
+              </div>
+          </paper-card>
+          </div>
       </div>
       <div id="unique3" class="unique">
-          <div class="card-interior">
-          <div class="card-padding">
+          <div class="container">
             <h1 class="card-title">Lets' Talk</h1>
               <paper-card heading="Name">
                 <div class="card-content">Some content</div>
