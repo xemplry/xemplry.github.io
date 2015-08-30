@@ -16,6 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" type="css" href="shared.css">
 
   <style>
+
     :host {
       display: block;
       --google-red-300: #A42840;
@@ -34,7 +35,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .card {
       position: relative;
-      margin: 100px;
+      margin: 5%;
       font-family: 'Delius', cursive;
       text-align: left;
       color: #ffffff;
@@ -52,25 +53,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     a:link {
       color: #FFFFFF;
-      font-size: 20px
     }
 
     /* visited link */
     a:visited {
       color: #00FF00;
-      font-size: 20px
     }
 
     /* mouse over link */
     a:hover {
       color: #FF00FF;
-      font-size: 20px
     }
 
     /* selected link */
     a:active {
       color: #0000FF;
-      font-size: 20px
     }
 
     .circular_rahul {
@@ -101,21 +98,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .card-interior {
       margin: 50px;
-      padding:100px;
+      padding: 0px;
     }
 
     .card-title {
-      padding-top: 100px;
-      padding-bottom: 100px;
-      font-size: 80px;
+      padding: 5% 0px;
       text-align: center;
     }
 
     .card-padding {
-      margin: 50px;
+      margin: 2%;
       padding: 0px;
       overflow: auto;
-      padding-bottom: 50px;
     }
 
     .info-group {
@@ -124,7 +118,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .info-group a {
       vertical-align: middle;
-      font-size: 16px;
     }
 
     .info-group i {
@@ -132,19 +125,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding-left: 40px;
     }
 
+    #unique1 .container {
+      padding-bottom: 5%;
+    } 
+
+
+    .row {
+      overflow: auto;
+      text-align: center;
+      padding: 3%;
+    }
+
     .row img{
       margin-right: auto;
       margin-left: auto;
+      height: 100px;
+      vertical-align: middle;
+      padding-bottom: 15px;
     }
 
+    .row p {
+      text-align: center;
+      vertical-align: middle;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
 
-    p{
+    p {
       font-family: 'Delius', cursive;
-      font-size: 20px;
-    }
-    .desc-padding {
-      padding-left: 25px;
-      padding-right: 25px;
     }
     
     h3 {
@@ -156,32 +164,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .info {
       margin: auto;
       width: 50%;
-      
     }
-
-    .row {
-      overflow: auto;
-      padding-bottom: 50px;
-      padding-top: 50px;
-      text-align: center;
-    }
-
-    .grey{
-      blue-300;
-    }
-
-    .
-    
-
-    .headerDivider {
-     border-left:1px solid #ffffff; 
-     border-right:1px solid #ffffff;
-     border- 
-     height:80px;
-     position:center;
-     right:249px;
-     top:10px; 
-     }
 
     .material-icons{ padding-left: 3  0px;}
     .material-icons.md-18 { font-size: 18px; }
@@ -207,13 +190,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="card-padding">
             <h1 class="card-title">We're Xemplry</h1>
             <div class="left-column desc-padding">
-              <h2>We do</h2>
+              <h5>We do</h5>
               <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
               <p>We started Xemplry to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
               <p>Who are we? We're Xemplary. We give excellence in a package. When you work with us, you demonstrate to us that you choose excellence over mediocrity. You show us that you are willing to move forward and exploit the hidden opportunities around you to produce explosive growth for your business. You show us that you will do whatever it takes to beat your competitors.</p>
             </div>
             <div class="right-column desc-padding">
-              <h2>We care</h2>
+              <h5>We care</h5>
               <p>We listen to you and understand you because we’re entrepreneurs as well as techies. We deeply understand the needs of the market.</p>
               <p>And remember, your product is our product and we take pride in building the most lucrative products.</p>
             </div>
@@ -256,108 +239,102 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </div>
       <div id="unique1" class="unique">
-      
-          <div class="card-content">
-            <div class="container">
-              <h1 class="card-title">How we work</h1>
-              <div class="row blue-300">
-                <div class="six columns">
-                  <p>We sit and discuss with you to get a deep understanding of your problem.</p>
-                </div>
-                <div class="six columns">
-                  <img src="images/discuss.png">
-                </div>
-                </div>
-                <div class="row"> 
-                <div class="six columns">
-                  <img src="images/user_interface.png">
-                </div>
-                <div class="six columns">             
-                  <p>We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.</p>
-                </div>
-                </div>
-              <div class="row blue-300" style="padding-left:20px">
-                <div class="six columns">
-                  <p>We design the software architecture to meet one or more of the following requirements dependent on your domain:</p>
-                </div>
-                <div class="six columns">
-                  <img src="images/software_architecture.png">
-                </div>
+          <div class="container">
+            <h1 class="card-title">How we work</h1>
+            <div class="row blue-300">
+              <div class="six columns">
+                <p><span>We sit and discuss with you to get a deep understanding of your problem.</span></p>
               </div>
-              <div class="row">
-                <div class="four columns">
-                  <img src="images/scalability.png">
-                  <h2>Scalability</h2>
-                  <p>Smoothly accommodate the growth of your business.</p>
-                </div>
-                <div class="four columns">
-                  <img src="images/performance.png">
-                  <h2>Performance</h2>
-                  <p>Don’t make the user wait.</p>
-                </div>
-                <div class="four columns">
-                  <img src="images/malleability.png">
-                  <h2>Malleability</h2>
-                  <p>Deploy new features quickly and efficiently.</p>
-                </div>
+              <div class="six columns">
+                <img src="images/discuss.png">
               </div>
-               
-              <div class="row">
-                <div class="four columns">
-                  <img src="images/robustness.png">
-                  <h2>Robustness</h2>
-                  <p>Make sure your app can handle any unexpected situation silently, leaving your user unaware that any problem occurred.</p>
-                </div>
-                <div class="four columns">
-                <img src="images/security.png">
-                  <h2>Security</h2>
-                  <p>Build trust with your users.</p>
-                </div>
-                <div class="four columns">
-                  sdfsd
-                </div>
               </div>
-              <div class="row blue-300" style="padding-right:20px">
-                <div class="six columns">
-                  <img src="images/question.png">
-                </div>
-                <div class="six columns">
-                  <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
-                  We select the technology stack that will best implement the solution given your unique requirements.
-                  Suppose. </p>
-                </div>
+              <div class="row"> 
+              <div class="six columns">
+                <img src="images/user_interface.png">
               </div>
-              <div class="row">
-                <div class="six columns">
-                  <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
-                </div>
-                <div class="six columns">
-                  <img src="images/future.png">
-                </div>
+              <div class="six columns">             
+                <p>We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.</p>
               </div>
-              <div class="row blue-300">
-                <div class="six columns">
-                  <img src="images/safe_data.png">
-                </div>
-                <div class="six columns">
-                  <p>We know that your customers are paranoid about whether their data is safe with you.</p>
-                </div>
               </div>
-              <div class="row">
-                <div class="six columns">
-                  <p>We know that your competitors are employing their best efforts to beat you out.</p>
-                </div>
-                <div class="six columns">
-                  <img src="images/competitors.png">
-                </div>
+            <div class="row blue-300">
+              <div class="six columns">
+                <p>We design the software architecture to meet one or more of the following requirements dependent on your domain:</p>
               </div>
-              <div class="row blue-300" style="padding-right:20px">
-                <div class="six columns">
-                  <img src="images/establish.png">
-                </div>
-                <div class="six columns">
-                  <p>We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.</p>
-                </div>
+              <div class="six columns">
+                <img src="images/software_architecture.png">
+              </div>
+            </div>
+            <div class="row blue-300">
+              <div class="four columns">
+                <img src="images/scalability.png">
+                <h5>Scalability</h5>
+                <p>Smoothly accommodate the growth of your business.</p>
+              </div>
+              <div class="four columns">
+                <img src="images/performance.png">
+                <h5>Performance</h5>
+                <p>Don’t make the user wait.</p>
+              </div>
+              <div class="four columns">
+                <img src="images/malleability.png">
+                <h5>Malleability</h5>
+                <p>Deploy new features quickly and efficiently.</p>
+              </div>
+            </div>
+             
+            <div class="row blue-300">
+              <div class="four columns">
+                <img src="images/robustness.png">
+                <h5>Robustness</h5>
+                <p>Make sure your app can handle any unexpected situation silently, leaving your user unaware that any problem occurred.</p>
+              </div>
+              <div class="four columns">
+              <img src="images/security.png">
+                <h5>Security</h5>
+                <p>Build trust with your users.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="six columns">
+                <img src="images/question.png">
+              </div>
+              <div class="six columns">
+                <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
+                We select the technology stack that will best implement the solution given your unique requirements.
+                Suppose. </p>
+              </div>
+            </div>
+            <div class="row blue-300">
+              <div class="six columns">
+                <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
+              </div>
+              <div class="six columns">
+                <img src="images/future.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="six columns">
+                <img src="images/safe_data.png">
+              </div>
+              <div class="six columns">
+                <p>We know that your customers are paranoid about whether their data is safe with you.</p>
+              </div>
+            </div>
+            <div class="row blue-300">
+              <div class="six columns">
+                <p>We know that your competitors are employing their best efforts to beat you out.</p>
+              </div>
+              <div class="six columns">
+                <img src="images/competitors.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="six columns">
+                <img src="images/establish.png">
+              </div>
+              <div class="six columns">
+                <p>We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.</p>
               </div>
             </div>
           </div>
