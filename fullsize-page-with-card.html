@@ -14,6 +14,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import"  href="bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import"  href="bower_components/paper-button/paper-button.html">
 <link href="bower_coomponents/iron-icons/iron-icons.html" rel="import">
+<link rel="import"  href="bower_components/paper-button/paper-button.html">
 
 <dom-module id="fullsize-page-with-card">
 
@@ -286,7 +287,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <br>
                 <p>Who are we? We're Xemplary. We give excellence in a package. When you work with us, you demonstrate to us that you choose excellence over mediocrity. You show us that you are willing to move forward and exploit the hidden opportunities around you to produce explosive growth for your business. You show us that you will do whatever it takes to beat your competitors.</p>
             </div>
-            
+
             <div class="six columns">
               <h3>We care</h3>
               <p>We listen to you and understand you because we’re entrepreneurs as well as techies. We deeply understand the needs of the market.</p>
@@ -331,8 +332,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </div>
         </div>
       </div>
-            
-      
+
+
       <div id="unique1" class="unique">
           <div class="container">
             <h1 class="card-title">How we work</h1>
@@ -377,7 +378,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p>Deploy new features quickly and efficiently.</p>
               </div>
             </div>
-             
+
             <div class="row blue-300 borders-left-right-bottom">
               <div class="four columns">
                 <img src="images/robustness.png">
@@ -513,12 +514,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div id="unique3" class="unique">
           <div class="container">
             <h1 class="card-title">Lets' Talk</h1>
+            <form id="contact" action="https://docs.google.com/a/xemplry.com/forms/d/1YQX6qsj7rEgmdHcGYtbCwheE0aY6KtMB2U-Mx0so-9E/formResponse" method="POST">
               <div class="row red-300 borders">
                 <div class="six columns">
-                  <paper-input label="Name"></paper-input>
+                  <paper-input name="entry.1727917345" label="Name"></paper-input>
                 </div>
                 <div class="six columns">
-                  <paper-input label="Email"></paper-input>
+                  <paper-input name="entry.2129286448" label="Email"></paper-input>
                 </div>
               </div>
               <div style="height:10%">
@@ -527,7 +529,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
               <div class="row red-300 borders">
                 <div class="twelve columns">
-                  <paper-input label="Write your message here. Keep it simple and concise!">
+                  <paper-input name="entry.1661095708" label="Write your message here. Keep it simple and concise!">
                   </paper-input>
                 </div>
               </div>
@@ -536,12 +538,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <br>
               </div>
               <div class="twelve columns">
-                <paper-button>
+                <paper-button raised on-click="_submitForm">
                 Submit here
                 <iron-icon icon="send"></iron-icon>
               </paper-button>
               </div>
-
+            </form>
           </div>
       </div>
   </template>
@@ -632,6 +634,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       _openGallery: function(event) {
           var id = event.target.getAttribute('data-id');
           blueimp.Gallery(Polymer.dom(this.$[id]).querySelectorAll('a'));
+      },
+      _submitForm: function(event) {
+          this.$.contact.submit();
       }
   });
 </script>
