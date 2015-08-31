@@ -26,20 +26,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       display: block;
       --google-red-300: #A42840;
       --google-blue-300: #252531;
-      --google-red-100: #ffffff;
-      --google-blue-100: #ffffff;
+      --google-red-100: #A42840;
+      --google-blue-100: #252531;
       --paper-card-header-color:#ffffff;
       --paper-fab: {
         position: fixed;
         bottom: 15px;
         right: 15px;
         z-index: 2;
+        color: #A42840;
         
 
       };
       --paper-card:{
         background-color:#252531; 
-        width: 100%
+        
       };
       --paper-input-container-color:#ffffff;
       --paper-input-container-focus-color:#D7D7D7;
@@ -49,11 +50,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       };
       --paper-button:{
         background-color: #A42840;
-        text-align: right;
         margin-right: auto;
         margin-left: auto;
-        
-
+        position: relative;
+        vertical-align: middle;
       };
       --paper-input-container-label-focus:{
         font-family: 'Delius', cursive;
@@ -68,7 +68,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       --paper-card-header:{
         text-align: center;
       };
-      --paper-fab-background: var(--google-red-300);
+      --paper-fab-background: #ffffff;
     }
 
     .fixed {
@@ -81,10 +81,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     .card {
       position: relative;
-      margin: 10%;
       font-family: 'Delius', cursive;
       text-align: left;
-      color: #ffffff;
+      color: #ffffff; 
+    }
+    .card #unique3 .container{
+      height: 100%;
+    }
+
+    @media (max-width: 550px) {
+      .card {
+        margin: 0;
+      }
     }
 
     .circular_jo {
@@ -178,6 +186,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     #unique1 .container {
       padding-bottom: 5%;
+
     } 
     #unique0 .container {
       padding-bottom: 5%;
@@ -187,6 +196,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     #unique3 .container {
       padding-bottom: 5%;
+      height: 100%;
     }
     #unique3 {
       --paper-card:{
@@ -202,7 +212,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .row img{
       margin-right: auto;
       margin-left: auto;
-      height: 100px;
+      height: 75px;
       vertical-align: middle;
       padding-bottom: 15px;
     }
@@ -365,11 +375,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/stack/openshift.png" style="width:auto;height:50px">
                   <img src="images/stack/composeio.png" style="width:auto;height:50px">
                   <img src="images/stack/clugrid.jpeg" style="width:auto;height:50px">
+                  <img src="images/stack/salesforce.png" style="width:auto;height:50px">
+                  <img src="images/stack/windows.png" style="width:auto;height:50px">
                 </div>
               </paper-card>
               </div>
               <div class="four columns">
-                <paper-card heading="Prog. languages">
+                <paper-card heading="Languages">
                 <div class="card-content">
                   <img src="images/stack/haskell.png" style="width:auto;height:50px">
                   <img src="images/stack/scala.png" style="width:auto;height:50px">
@@ -551,8 +563,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/enroot_logo.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light" on-click="_openGallery" data-id="enroot">image</i>
-                    <a target="_blank" href="http://www.enrootapp.in/"><i class="material-icons md-light" id="link_button" >link</i> </a>  
+                    <i class="material-icons md-light md-36" on-click="_openGallery" data-id="enroot">image</i>
+                    <a target="_blank" href="http://www.enrootapp.in/"><i class="material-icons md-light md-36" id="link_button" >link</i> </a>  
                 </div>
               </paper-card>
             </div>
@@ -562,8 +574,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/dudear_logo1.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light" on-click="_openGallery" data-id="dudear">image</i>
-                    <a target="_blank" href="http://www.enrootapp.in/dudear/"><i class="material-icons md-light" id="link_button" >link</i>  </a> 
+                    <i class="material-icons md-light md-36" on-click="_openGallery" data-id="dudear">image</i>
+                    <a target="_blank" href="http://www.enrootapp.in/dudear/"><i class="material-icons md-light md-36" id="link_button" >link</i>  </a> 
                 </div>
               </paper-card>
             </div>
@@ -575,8 +587,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/techniche_logo.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light" on-click="_openGallery" data-id="techniche">image</i>
-                    <a target="_blank" href="http://techniche.org/techniche15/"><i class="material-icons md-light" id="link_button" >link</i>  </a> 
+                    <i class="material-icons md-light md-36" on-click="_openGallery" data-id="techniche">image</i>
+                    <a target="_blank" href="http://techniche.org/techniche15/"><i class="material-icons md-light md-36" id="link_button" >link</i>  </a> 
                 </div>
               </paper-card>
             </div>
@@ -586,8 +598,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/tk_logo.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light">image</i>
-                    <i class="material-icons md-light" id="link_button" >link</i>   
+                    <i class="material-icons md-light md-36">image</i>
+                    <i class="material-icons md-light md-36" id="link_button" >link</i>   
                 </div>
               </paper-card>
             </div>
@@ -612,7 +624,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
               <div class="row red-300 borders">
                 <div class="twelve columns">
-                  <paper-input name="entry.1661095708" label="Write your message here. Keep it simple and concise!">
+                  <paper-input name="entry.1661095708" label="Write your message here. Keep it concise!">
                   </paper-input>
                 </div>
               </div>
@@ -620,12 +632,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <br>
                 <br>
               </div>
-              <div class="twelve columns">
                 <paper-button raised on-click="_submitForm">
                 Submit here
                 <iron-icon icon="send"></iron-icon>
               </paper-button>
-              </div>
             </form>
           </div>
       </div>
