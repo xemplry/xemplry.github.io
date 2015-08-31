@@ -255,6 +255,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       display: block;
     }
 
+   i[data-id] {
+       cursor: pointer;
+   }
+
     .material-icons{ padding-left: 3  0px;}
     .material-icons.md-18 { font-size: 18px; }
     .material-icons.md-24 { font-size: 24px; }
@@ -462,6 +466,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div id="unique2" class="unique">
         <div class="container">
           <h1 class="card-title">See our work</h1>
+            <div class="links" id="dudear">
+              <a href="images/screens/DudeAR/dudear1.png" title="Screen1"></a>
+              <a href="images/screens/DudeAR/dudear2.png" title="Screen2"></a>
+              <a href="images/screens/DudeAR/dudear3.png" title="Screen3"></a>
+              <a href="images/screens/DudeAR/dudear4.png" title="Screen4"></a>
+              <a href="images/screens/DudeAR/dudear5.png" title="Screen5"></a>
+            </div>
+            <div class="links" id="enroot">
+              <a href="images/screens/Enroot/enroot1.png" title="Screen1"></a>
+              <a href="images/screens/Enroot/enroot2.png" title="Screen2"></a>
+              <a href="images/screens/Enroot/enroot3.png" title="Screen3"></a>
+              <a href="images/screens/Enroot/enroot4.png" title="Screen4"></a>
+              <a href="images/screens/Enroot/enroot5.png" title="Screen5"></a>
+              <a href="images/screens/Enroot/enroot6.png" title="Screen6"></a>
+            </div>
+            <div class="links" id="techniche">
+              <a href="images/screens/Techniche/techniche1.png" title="Screen1"></a>
+              <a href="images/screens/Techniche/techniche2.png" title="Screen2"></a>
+              <a href="images/screens/Techniche/techniche3.png" title="Screen3"></a>
+              <a href="images/screens/Techniche/techniche4.png" title="Screen4"></a>
+              <a href="images/screens/Techniche/techniche5.png" title="Screen5"></a>
+            </div>
           <div class="row">
             <div class="six columns">
               <paper-card heading="ENROOT">
@@ -469,7 +495,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/enroot_logo.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" on-click="_openGallery" data-id="enroot">image</i>
                     <i class="material-icons md-light" id="link_button" >link</i>   
                 </div>
               </paper-card>
@@ -480,7 +506,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/dudear_logo1.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" on-click="_openGallery" data-id="dudear">image</i>
                     <i class="material-icons md-light" id="link_button" >link</i>   
                 </div>
               </paper-card>
@@ -493,7 +519,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/techniche_logo.png" style="width:50%;height:50%">
                 </div>
                 <div class="card-actions">
-                    <i class="material-icons md-light">image</i>
+                    <i class="material-icons md-light" on-click="_openGallery" data-id="techniche">image</i>
                     <i class="material-icons md-light" id="link_button" >link</i>   
                 </div>
               </paper-card>
@@ -528,7 +554,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <br>
               </div>
               <div class="row red-300 borders">
-                <div class="twelve columns"> 
+                <div class="twelve columns">
                   <paper-input label="Write your message here. Keep it simple and concise!">
                   </paper-input>
                 </div>
@@ -543,7 +569,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <iron-icon icon="send"></iron-icon>
               </paper-button>
               </div>
-              
+
           </div>
       </div>
   </template>
@@ -579,7 +605,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           return {
             'hero': this.$.card,
             'ripple': this.$.fixed
-
           }
         }
       },
@@ -631,6 +656,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
     _onClick: function() {
       this.fire('back');
-    }
+    },
+      _openGallery: function(event) {
+          var id = event.target.getAttribute('data-id');
+          blueimp.Gallery(Polymer.dom(this.$[id]).querySelectorAll('a'));
+      }
   });
 </script>
