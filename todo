@@ -1,6 +1,15 @@
-2. Email Submission
-3. Adding Links
-4. Perfecting Content
-5. Making the Submit Button Centered
-6. Making the Icons Small
-7. Spacing between icons
+-Perfecting Content
+-Adding links to playstore
+-Replace ? icon with gift icon
+-Making the Submit Button Centered
+-Loading screen
+
+Later:
+-Multi-line paper-input
+-As you scroll, the icons should should appear gradually + typewrite animation
+-Twitter, Facebook, Linkedin, Social Icons on Floating Action button on We Do Digital page.
+-In orientation landscape, make sure fonts are properly sized.
+-Add title attribute for all technologies
+-Fixed toolbar with dynamic headings as a function of scroll
+
+

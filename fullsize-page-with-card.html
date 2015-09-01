@@ -79,7 +79,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .card {
       position: relative;
       font-family: 'Delius', cursive;
-      text-align: left;
       color: #ffffff; 
     }
     .card #unique3 .container{
@@ -92,15 +91,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     }
 
-    .circular_jo {
+   #jo {
+       background: url(images/jo.jpg) no-repeat;
+   }
+
+   #rahul {
+      background: url(images/rahul1.jpg) no-repeat;
+   }
+
+    .circular {
      margin: auto;
       width: 200px;
       height: 200px;
       border-radius: 150px;
       -webkit-border-radius: 150px;
       -moz-border-radius: 150px;
-      background: url(images/jo.jpg) no-repeat;
       align: center;
+      border-color: #FFFFFF;
+        border-style: solid;
+        border-width: 3px;
     }
 
     i {
@@ -126,16 +135,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       color: #0000FF;
     }
 
-    .circular_rahul {
-      margin: auto;
-      width: 200px;
-      height: 200px;
-      border-radius: 150px;
-      -webkit-border-radius: 150px;
-      -moz-border-radius: 150px;
-      background: url(images/rahul1.jpg) no-repeat ;
-    }
-
     .left-column {
       box-sizing: border-box;
       display: inline-block;
@@ -158,7 +157,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .card-title {
-      padding: 5% 0px;
+      padding: 25px 0px;
       text-align: center;
     }
 
@@ -183,11 +182,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     #unique1 .container {
       padding-bottom: 5%;
+    }
 
-    } 
     #unique0 .container {
       padding-bottom: 5%;
-    } 
+    }
     #unique2 .container {
       padding-bottom: 5%;
     }
@@ -202,9 +201,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     .row {
       overflow: auto;
-      text-align: center;
-      padding: 5%;
+      padding: 25px;
     }
+
+   #unique1 .row {
+       padding: 5%;
+   }
 
     .row img{
       margin-right: auto;
@@ -221,12 +223,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .borders-left-right-top{
-      border-bottom-style: hidden;  
+      border-bottom-style: hidden;
       border-top-style: solid;
       border-right-style: solid;
       border-left-style: solid;
       border-width: 2px;
-      border-color: #FFFFFF; 
+      border-color: #FFFFFF;
     }
 
     .borders-left-right{
@@ -244,18 +246,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       border-right-style: solid;
       border-left-style: solid;
       border-width: 2px;
-      border-color: #FFFFFF; 
+      border-color: #FFFFFF;
     }
+
+   .row .columns {
+       text-align: center;
+   }
 
     .row p {
       text-align: center;
       vertical-align: bottom;
     }
 
+
     p {
       font-family: 'Delius', cursive;
     }
-    
+
     h3 {
       margin: auto;
       font-family: 'Delius', cursive;
@@ -268,6 +275,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
    i[data-id] {
        cursor: pointer;
+   }
+
+   .row h5 + p {
+       text-align: center;
    }
 
     .material-icons{ padding-left: 3  0px;}
@@ -293,46 +304,46 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <h1 class="card-title">We're Xemplry</h1>
           <div class="row red-300 borders">
             <div class="six columns">
-              <h3>We do</h3>
+              <h3>We Do</h3>
                 <p>We're a premium technical consulting and development agency based in Bengaluru, India.</p>
-                <p>We started Xemplry to provide premium technical services to premium clients like you who want to grow their businesses with the aid of technology.</p>
+                <p>We started Xemplry to provide premium technical services to premium clients like you who want to grow their businesses.</p>
                 <br>
             </div>
 
             <div class="six columns">
-              <h3>We care</h3>
-              <p>We listen to you and understand you because we’re entrepreneurs as well as techies. We deeply understand the needs of the market.</p>
-              <p>And remember, your product is our product and we take pride in building the most lucrative products.</p>
+              <h3>We Love</h3>
+              <p>We're a small group of highly motivated entrepreneurs who have a deep understanding of technology and design and its influence on users.</p>
+              <p>We each have a zeal for what we do and we constantly strive to improve our craft.</p>
             </div>
           </div>
           <h1 class="card-title">People</h1>
           <div class="row red-300 borders">
             <div class="six columns">
-              <div class="circular_jo"></div>
+              <div id="jo" class="circular"></div>
               <h3>Jyothsna Srinivas</h3>
               <div class="info">
-                <i class="material-icons md-36 md-light">call</i>  
-                <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
+                <i class="material-icons md-36 md-light">call</i>
+                <a class="links" href="tel:+91-9980788040">+91-9980788040</a>
               </div>
               <div class="info">
                 <i class="material-icons md-36 md-light">email</i>
-                <a href="jyothsna@xemplry.com">jyothsna@xemplry.com</a>
+                <a href="mailto:jyothsna@xemplry.com">jyothsna@xemplry.com</a>
               </div>
               <p>
-                  Jyothsna is a writer, designer, and front-end developer. She retrieves valuable information from the depths of Google and parse it at a lightning-fast pace, finding valuable insights about any topic very quickly.
+                  Jyothsna is a creative writer, designer, and front-end developer. She retrieves valuable information from the depths of Google with high-speed comprehension, finding valuable insights about any topic very quickly.
               </p>
             </div>
 
             <div class="six columns">
-              <div class="circular_rahul"></div>  
+              <div id="rahul" class="circular"></div>
                 <h3>Rahul Muttineni</h3>
                 <div class="info">
-                  <i class="material-icons md-36 md-light">call</i>  
+                  <i class="material-icons md-36 md-light">call</i>
                   <a class="links" href="tel:+91-8011036728">+91-8011036728</a>
                 </div>
                 <div class="info">
                   <i class="material-icons md-36 md-light">email</i>
-                  <a href="rahul@xemplry.com">rahul@xemplry.com</a>
+                  <a href="mailto:rahul@xemplry.com">rahul@xemplry.com</a>
                 </div>
                 <p>
                   Rahul is a self-taught programmer, entrepreneur, and teacher. Having built an online multiplayer game at the age of 13 which had 600+ players, he now loves architecting systems that are scalable, robust, and secure. He can learn anything software-related at a lightning-fast pace and rapidly output a product.
@@ -343,15 +354,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </div>
 
-
       <div id="unique1" class="unique">
           <div class="container">
-            <h1 class="card-title">We do digital</h1>
+            <h1 class="card-title">We Do Digital</h1>
+            <div class="row">
+                <div class="twelve columns">
+                    <p>Ready to enter the digital age? No problem, we've got your back! We develop websites and apps to help you move your company forward. We keep up with the latest trends so you don't have to. Whether it's responsive design or cross-platform apps, we can help you use technology to maximize the growth of the business.</p>
+                </div>
+            </div>
+            <h2 style="text-align: center; padding-top: 5%;">We Know</h2>
             <div class="row">
               <div class="four columns">
-                <paper-card heading="Web technologies">
+                <paper-card heading="Web">
                 <div class="card-content">
-                  <img src="images/stack/polymer_logo.png" style="width:auto;height:50px">
+                  <img title="Polymer" src="images/stack/polymer_logo.png" style="width:auto;height:50px">
                   <img src="images/stack/angularjs.png" style="width:auto;height:50px">
                   <img src="images/stack/materialize.png" style="width:auto;height:50px">
                   <img src="images/stack/bootstrap.png" style="width:auto;height:50px">
@@ -362,9 +378,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
 
                 </paper-card>
-              </div> 
+              </div>
               <div class="four columns">
-                <paper-card heading="Cloud platforms">
+                <paper-card heading="Cloud">
                 <div class="card-content">
                   <img src="images/stack/heroku.png" style="width:auto;height:50px">
                   <img src="images/stack/googlecompute.png" style="width:auto;height:50px">
@@ -387,15 +403,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <img src="images/stack/cplusplus.png" style="width:auto;height:50px">
                   <img src="images/stack/java.png" style="width:auto;height:50px">
                   <img src="images/stack/javascript.jpeg" style="width:auto;height:50px">
-                  <img src="images/stack/erlang.jpeg" style="width:auto;height:50px"> 
+                  <img src="images/stack/erlang.jpeg" style="width:auto;height:50px">
                 </div>
               </paper-card>
               </div>
-              
+
             </div>
             <div class="row">
             <div class="four columns">
-                <paper-card heading="Mobile technologies">
+                <paper-card heading="Mobile">
                 <div class="card-content">
                   <i class="material-icons md-green md-48">android</i>
                   <img src="images/stack/ionic.png" style="width:auto;height:50px">
@@ -404,32 +420,81 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
               </paper-card>
               </div>
-              
+
               <div class="four columns">
-                <paper-card heading="Database tech">
+                <paper-card heading="Databases">
                 <div class="card-content">
                   <img src="images/stack/mangodb.png" style="width:auto;height:50px">
                   <img src="images/stack/mysql.png" style="width:auto;height:50px">
                   <img src="images/stack/postsql.png" style="width:auto;height:50px">
                   <img src="images/stack/redis.png" style="width:auto;height:50px">
-                  
                 </div>
               </paper-card>
               </div>
               <div class="four columns">
-                <paper-card heading="Backend tech">
+                <paper-card heading="Backends">
                 <div class="card-content">
                   <img src="images/stack/nodejs.png" style="width:50px;height:50px">
                   <img src="images/stack/socket.gif" style="width:auto;height:50px">
                   <img src="images/stack/parse.jpg" style="width:auto;height:50px">
                   <img src="images/stack/firebase.png" style="width:50px;height:50px">
-                  
                 </div>
               </paper-card>
               </div>
-
             </div>
-            <h1 class="card-title">How we work</h1>
+
+            <div class="row">
+              <div class="twelve columns">
+                <p>We work with cutting-edge technologies so that we can deliver the best, polished product to impress your customers, differentiate you from your competition, and establish that your company is ever-modern and ready to embrace change.</p>
+              </div>
+              </div>
+            <h2 class="card-title">We Understand</h2>
+
+            <div class="row blue-300 borders" >
+              <div class="six columns">
+                <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
+              </div>
+              <div class="six columns">
+                <img src="images/future.png">
+              </div>
+            </div>
+            <div syle="height:10%">
+                <br>
+                <br>
+              </div>
+            <div class="row">
+              <div class="six columns">
+                <img src="images/safe_data.png">
+              </div>
+              <div class="six columns">
+                <p>We know that your customers are paranoid about whether their data is safe with you.</p>
+              </div>
+            </div>
+            <div style="height:10%">
+                <br>
+                <br>
+              </div>
+            <div class="row blue-300 borders">
+              <div class="six columns">
+                <p>We know that your competitors are employing their best efforts to beat you out.</p>
+              </div>
+              <div class="six columns">
+                <img src="images/competitors.png">
+              </div>
+            </div>
+            <div style="height:10%">
+                <br>
+                <br>
+              </div>
+            <div class="row">
+              <div class="six columns">
+                <img src="images/establish.png">
+              </div>
+              <div class="six columns">
+                <p>We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.</p>
+              </div>
+            </div>
+            <h2 class="card-title">We Work</h2>
             <div class="row blue-300 borders">
               <div class="six columns" style="height: 100%">
                 <p><span>We sit and discuss with you to get a deep understanding of your problem.</span></p>
@@ -442,12 +507,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <br>
                 <br>
               </div>
-              <div class="row"> 
+              <div class="row">
               <div class="six columns">
                 <img src="images/user_interface.png">
               </div>
-              <div class="six columns">             
-                <p>We identify your target market and design the user interface and user experience tailored for them to maximize user satisfaction.</p>
+              <div class="six columns">
+                <p>We identify your target market and design the user interface and user experience accordingly to maximize user satisfaction.</p>
               </div>
               </div>
               <div style="height:10%">
@@ -487,7 +552,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="four columns">
                 <img src="images/robustness.png">
                 <h5>Robustness</h5>
-                <p>Make sure your app can handle any unexpected situation silently, leaving your user unaware that any problem occurred.</p>
+                <p>Handle exceptional situations with grace.</p>
               </div>
               <div class="four columns">
               <img src="images/security.png">
@@ -504,65 +569,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <img src="images/question.png">
               </div>
               <div class="six columns">
-                <p>What does this mean for you business? Cheap scaling, and reduction in recurring technical costs, rapid product delivery.
-                We select the technology stack that will best implement the solution given your unique requirements.
-                Suppose. </p>
+                <p>
+                We select the technology stack that will best implement the solution given your unique requirements and deliver you excellence in a package. </p>
               </div>
             </div>
-            <div style="height:10%">
-                <br>
-                <br>
-              </div>
-            <div class="row blue-300 borders" >
-              <div class="six columns">
-                <p>We think about the future of your business. We know that you worry about how much effort it'll take to scale your business from 100 users to 100,000 users.</p>
-              </div>
-              <div class="six columns">
-                <img src="images/future.png">
-              </div>
-            </div>
-            <div style="height:10%">
-                <br>
-                <br>
-              </div>
-            <div class="row">
-              <div class="six columns">
-                <img src="images/safe_data.png">
-              </div>
-              <div class="six columns">
-                <p>We know that your customers are paranoid about whether their data is safe with you.</p>
-              </div>
-            </div>
-            <div style="height:10%">
-                <br>
-                <br>
-              </div>
             <div class="row blue-300 borders">
               <div class="six columns">
-                <p>We know that your competitors are employing their best efforts to beat you out.</p>
+                  <p>What does this mean for you business? Cheap scaling, reduction in recurring technical costs, and rapid product delivery.</p>
+                  <p>Ready to work with us? Send us an email, and we'll get started!</p>
               </div>
               <div class="six columns">
-                <img src="images/competitors.png">
+                <img src="images/question.png">
               </div>
             </div>
             <div style="height:10%">
                 <br>
                 <br>
               </div>
-            <div class="row">
-              <div class="six columns">
-                <img src="images/establish.png">
-              </div>
-              <div class="six columns">
-                <p>We know that you need a way to distinguish yourself, establish to your customers that you're the king of your domain, and that you're here to stay.</p>
-              </div>
-            </div>
           </div>
       </div>
 
       <div id="unique2" class="unique">
         <div class="container">
-          <h1 class="card-title">See our work</h1>
+          <h1 class="card-title">See Our Work</h1>
+          <div class="row">
+              <div class="twelve columns">
+                  <p>Check out what we've done below. For more details, feel free to contact us.</p>
+              </div>
+          </div>
             <div class="links" id="dudear">
               <a href="images/screens/DudeAR/dudear1.png" title="Screen1"></a>
               <a href="images/screens/DudeAR/dudear2.png" title="Screen2"></a>
@@ -592,7 +626,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
                 <div class="card-actions">
                     <i class="material-icons md-light md-36" on-click="_openGallery" data-id="enroot">image</i>
-                    <a target="_blank" href="http://www.enrootapp.in/"><i class="material-icons md-light md-36" id="link_button" >link</i> </a>  
+                    <a target="_blank" href="http://www.enrootapp.in/"><i class="material-icons md-light md-36" id="link_button" >link</i> </a>
                 </div>
               </paper-card>
             </div>
@@ -603,7 +637,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
                 <div class="card-actions">
                     <i class="material-icons md-light md-36" on-click="_openGallery" data-id="dudear">image</i>
-                    <a target="_blank" href="http://www.enrootapp.in/dudear/"><i class="material-icons md-light md-36" id="link_button" >link</i>  </a> 
+                    <a target="_blank" href="http://tinyurl.com/o3njm9d"><i class="material-icons md-light md-36" id="link_button" >link</i>  </a> 
                 </div>
               </paper-card>
             </div>
@@ -616,7 +650,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
                 <div class="card-actions">
                     <i class="material-icons md-light md-36" on-click="_openGallery" data-id="techniche">image</i>
-                    <a target="_blank" href="http://techniche.org/techniche15/"><i class="material-icons md-light md-36" id="link_button" >link</i>  </a> 
+                    <a target="_blank" href="http://tinyurl.com/q5s6dob"><i class="material-icons md-light md-36" id="link_button" >link</i>  </a>
                 </div>
               </paper-card>
             </div>
@@ -627,7 +661,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
                 <div class="card-actions">
                     <i class="material-icons md-light md-36">image</i>
-                    <i class="material-icons md-light md-36" id="link_button" >link</i>   
+                    <i class="material-icons md-light md-36" id="link_button" >link</i>
                 </div>
               </paper-card>
             </div>
@@ -636,7 +670,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
       <div id="unique3" class="unique">
           <div class="container">
-            <h1 class="card-title">Lets' Talk</h1>
+            <h1 class="card-title">Let's Talk</h1>
+            <div class="row">
+                <div class="twelve columns">
+                    <p>Want to discuss your technical problems with us? Want to know more about how we can help you? Contact us at <a href="mailto:info@xemplry.com">info@xemplry.com</a> or fill out the form below. We hope to hear from you soon!</p>
+                </div>
+            </div>
+            <div style="height:10%">
+                <br>
+                <br>
+            </div>
             <form id="contact" action="https://docs.google.com/a/xemplry.com/forms/d/1YQX6qsj7rEgmdHcGYtbCwheE0aY6KtMB2U-Mx0so-9E/formResponse" method="POST">
               <div class="row red-300 borders">
                 <div class="six columns">
@@ -652,7 +695,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </div>
               <div class="row red-300 borders">
                 <div class="twelve columns">
-                  <paper-input name="entry.1661095708" label="Write your message here.">
+                  <paper-input name="entry.1661095708"  multiline label="Write your message here.">
                   </paper-input>
                 </div>
               </div>
@@ -660,10 +703,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <br>
                 <br>
               </div>
+              <div style="text-align:right">
                 <paper-button raised on-click="_submitForm">
                 Submit here
-                <iron-icon icon="send"></iron-icon>
               </paper-button>
+              </div>
             </form>
           </div>
       </div>
